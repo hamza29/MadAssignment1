@@ -4,20 +4,22 @@ package com.example.hamza.madassignment1;
  * Created by Hamza on 9/30/2017.
  */
 public class Contact {
-    private String name, number;
-    private int image;
+    private String name, number,email;
+    //private String image;
     private String call;
 
     public Contact() {
     }
 
-    public Contact(String name, String number, int image, String call) {
+    public Contact(String name, String number, String call,String email) {
         this.name = name;
         this.number = number;
         // this.year = year;
-        this.image = image;
+      //  this.image = image;
+        this.email=email;
         this.call = call;
     }
+
 
     public String getName() {
         return name;
@@ -50,13 +52,22 @@ public class Contact {
         this.number = number;
     }
 
-    public int getImage() {
-        return image;
+    public String getEmail() {
+        return email;
     }
 
-    public void setImage(int image) {
-        this.image = image;
-    }
+    public void setEmail(String email) {
+        this.email = email;}
+//    }
+//
+//    public String getImage() {
+//        return image;
+//    }
+//
+//    public void setImage(String image) {
+//        this.image = image;
+//    }
+
 
 
 }
